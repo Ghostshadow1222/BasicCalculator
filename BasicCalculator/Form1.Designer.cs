@@ -34,7 +34,8 @@
             WidthTbx = new TextBox();
             CalculateBtn = new Button();
             AreaTbx = new TextBox();
-            PerimeterTbx = new TextBox();
+            label3 = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -81,26 +82,35 @@
             // 
             // AreaTbx
             // 
-            AreaTbx.Location = new Point(282, 194);
+            AreaTbx.Location = new Point(56, 301);
             AreaTbx.Name = "AreaTbx";
             AreaTbx.ReadOnly = true;
-            AreaTbx.Size = new Size(189, 23);
+            AreaTbx.Size = new Size(222, 23);
             AreaTbx.TabIndex = 5;
             // 
-            // PerimeterTbx
+            // label3
             // 
-            PerimeterTbx.Location = new Point(282, 242);
-            PerimeterTbx.Name = "PerimeterTbx";
-            PerimeterTbx.ReadOnly = true;
-            PerimeterTbx.Size = new Size(189, 23);
-            PerimeterTbx.TabIndex = 6;
+            label3.AutoSize = true;
+            label3.Location = new Point(56, 84);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 15);
+            label3.TabIndex = 6;
+            label3.Text = "label3";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(178, 81);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 7;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(PerimeterTbx);
+            Controls.Add(textBox1);
+            Controls.Add(label3);
             Controls.Add(AreaTbx);
             Controls.Add(CalculateBtn);
             Controls.Add(WidthTbx);
@@ -121,6 +131,7 @@
         private TextBox WidthTbx;
         private Button CalculateBtn;
         private TextBox AreaTbx;
-        private TextBox PerimeterTbx;
+        private Label label3;
+        private TextBox textBox1;
     }
 }
